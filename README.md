@@ -14,6 +14,9 @@ Ass this dependency to your project (available via Maven Central to avoid proble
 Now you can do a couple of things in a @PostDeploy hook of a process application:
 
 ```
+import static com.camunda.consulting.util.UserGenerator.*;
+import static com.camunda.consulting.util.FilterGenerator.*;
+
 @ProcessApplication
 public class MyProcessApplication extends ServletProcessApplication {
 
@@ -38,7 +41,7 @@ public class MyProcessApplication extends ServletProcessApplication {
         new String[] { "insurance-application" });
 ```
 
-See [InsuranceProcessApplication](https://github.com/camunda/camunda-consulting/blob/master/showcases/en/insurance-application/process-application/src/main/java/com/camunda/demo/insuranceapplication/InsuranceProcessApplication.java) for an example of using it.
+See [InsuranceProcessApplication](https://github.com/camunda-consulting/camunda-showcase-insurance-application/blob/master/src/main/java/com/camunda/demo/insuranceapplication/InsuranceProcessApplication.java) for an example of using it.
 
 Features
 -------------
